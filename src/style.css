@@ -33,6 +33,15 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.page {
+    padding: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
 /* Header */
 
 #header {
@@ -58,13 +67,54 @@ body {
     padding: 0 1rem;
     color: #ffffff;
     font-size: 1.1rem;
+    outline: none;
 }
 
 #header .auth-options button:hover {
     background-color: #696969;
 }
 
-/* inspect the browser and see if mobile devices will need some styling */
+/* forms */
+
+.form label,
+.form input {
+    display: block;    
+}
+
+.form input {
+    margin-bottom: 1rem;
+}
+
+.form label {
+    margin-bottom: 0.2rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #c2c2c2;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.form input:focus {
+    border: 1px solid #77c2e6;
+    box-shadow: inset 0px 0px 5px rgba(152, 196, 216, 0.979);
+    outline: none;
+}
+
+.form input[type="submit"] {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #77c2e6;
+    border-radius: 8px;
+    background-color: #bfe1f7;
+    font-size: 1.1rem;
+}
+
+/* Media Queries (This helps to make the UI look good on mobile devices) */
 
 @media screen and (max-width: 550px) {
     #header .title {
